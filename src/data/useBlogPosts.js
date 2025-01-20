@@ -20,6 +20,7 @@ export const useBlogPosts = () => {
       );
       setLoading(false);
       setSearch(response.data.posts);
+      console.log(response)
       if (page === 1) {
         setPosts([...response.data.posts]);
       } else {
